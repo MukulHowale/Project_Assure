@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/directClaim1.css">
+    <title>DirectClaimStep1</title>
+
+</head>
+<body>
+
+    <div id="main">
+
+       
+            <div id="topBox">
+                <img src="../icons/back.svg" alt="" id="back">
+                <p id="prof">
+                    Direct Claim
+                </p>
+            </div>
+
+        <div id="info">
+            <img src="../icons/step1.svg" alt="">
+            <h3>Treatment Details*</h3>
+
+            <form action="" method="post">
+                <div id="treatmentDetailsForm">
+               
+                    <div>
+                       <p>Date of treatment*</p>
+                       <input id="dateOfTreatment" type="text" placeholder="DD/MM/YYYY" name="treatmentDate"> 
+                    </div>
+    
+                    <div>
+                        <p>Claim item*</p>
+                        <p>General Check-up <img src="../icons/Forwerd.svg" alt="" ></p>
+                    </div>
+    
+                    <div>
+                        <p>Amount indicated in <br> recipt*</p>
+                        <input id="treatmentNumericBox" type="text" name="treatmentAmount">
+                    </div>
+                    
+                    <div>
+                        <p>I have received <br> pre-authorisation confirmation*</p>
+                        <label class="switch">
+                            <input type="checkbox" name="treatmentConformation">
+                            <span class="slider round"></span>
+                        </label>
+                          
+                    </div>
+    
+                    <div>
+                        <p>Date of symptoms <br> first appeared</p>
+                        
+                        <input id="dateOfTreatment" type="text" placeholder="DD/MM/YYYY" name="symptomsDate"> 
+    
+                    </div>
+    
+                    <div>
+                        <p>It is a post hospitalisation <br> follow up visit</p>
+                        <label class="switch">
+                            <input type="checkbox" name="followUpVisit">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <p>I have filled this claim with other <br> insurers also*</p>
+                        <label class="switch">
+                            <input type="checkbox" name="otherInsures">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <p>Membership no.</p>
+                        <input id="treatmentNumericBox" type="text" name="membershipNumber">
+                    </div>
+                    
+                   
+                </div>
+
+
+                <div id="navigateBut">
+                    <button><input id="directingBtn" class="back" type="submit" value="Back"></button>
+                    <button><input id="directingBtn" class="next" type="submit" value="Next"></button>
+                </div>
+            </form>
+            
+           
+            
+        </div>
+            
+
+        
+    </div>
+    <script src="../scripts/directClaim1.js"></script>
+   
+</body>
+</html>

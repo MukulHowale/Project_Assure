@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home_navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon">
+    <title>Home - Assure</title>
+</head>
+<body>
+    <div id="main">
+        <div id="topBox">
+            <h1 id="helloUser">
+                Hello Krishna!
+            </h1>
+            <h5 id="membership_title">
+                ooops!
+            </h5>
+            <h2 id="membership_no">
+                You don't have any plan
+            </h2>
+            <h4 id="view_head">
+                Currently Viewing
+            </h4>
+            <h2 id="scheme">
+                You don't have any scheme
+            </h2>
+        </div>
+        <div id="claim_card">
+            <p id="getAssured">
+                Get Assured with high coverage insurances.
+            </p>
+            <button id="cardView">View</button>
+            <img id="vaccine_icon" src="../icons/vaccine.png" alt="">
+        </div>
+        <!-- Display of #claimCard is made none, when claim would be there it would be enabled #claim_card won't be displayed -->
+        <div id="claimCard">
+            <p id="policyCard" class="policyName">
+                Latest Claim
+            </p>
+            <div id="upClaimCard">
+                <div>
+                    <p class="product_title">
+                        Voucher No.
+                    </p>
+                    <p id="claimId" class="insurance_type">
+                        25484256
+                    </p>
+                </div>
+                <div class="left_valid">
+                    <p class="valid_title">
+                        Submit Date
+                    </p>
+                    <p id="claimValidThru" class="valid_thru">
+                        11/12/2021
+                    </p>
+                </div>
+            </div>
+            
+            <div class="cover_block">
+                <span>
+                    <p class="cover_title">
+                        Benefit Item
+                    </p>
+                    <p id="benefitItem" class="cover_amount">
+                        Specialist
+                    </p>
+                </span>
+                <span class="left_valid">
+                    <p class="valid_title">
+                        Claim Status
+                    </p>
+                    <p id="claimStatus" class="valid_thru">
+                        Processing
+                    </p>
+                </span>
+            </div>
+            <div class="details_div">
+                <p class="view_details">
+                    View Details
+                </p>
+                <img src="../icons/detail.svg" alt="" class="detail_arrow">
+            </div>
+        </div>
+        <div id="exploreClaim">
+            <button id="explore">
+                <img src="../icons/explore.svg" alt="">
+                <br>Explore
+            </button>
+            <button id="claim">
+                <img src="../icons/claim_navigation.svg" alt="">
+                <br>New Claim
+            </button>
+        </div>
+        <div id="card_below">
+            <p id="below_labl">
+                Assure yourself with best claim settlement rate insurances
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./../scripts/home.js"></script>
+<script type="module">
+    import {bottomNavbar, loadNavbar} from "../components/bottomNavbar.js";
+    let div = document.createElement('div');
+    div.innerHTML = bottomNavbar();
+    div.style.marginTop = "65%";
+    document.getElementById('main').appendChild(div);
+
+    loadNavbar();
+</script>

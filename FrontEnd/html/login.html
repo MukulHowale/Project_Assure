@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Assure</title>
+    <link rel="stylesheet" href="..\css\login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="main_container">
+        <div id="top_green_div" class="position backgroung_color_1">
+            <img id="assure_logo_2" src="..\images\assure_logo_2.svg" alt="">
+        </div>
+        <div id="mid_white_div">
+            <span id="welcome" class="font_family font_style position">Welcome to Assure!</span>
+
+            <input id="email_input" class="input_regis_log position" type="email" placeholder="Email">
+            <img id="email_symb" class=" vanish visible" src="..\images\error_symbol.svg" alt="">
+            <span class="error visible vanish" id="email_error"> <!-- email --> </span>
+
+            <input id="pass_input" class="input_regis_log position" type="text" placeholder="Password">
+            <img id="pass_symb" class=" vanish visible" src="..\images\error_symbol.svg" alt="">
+            <span class="error visible vanish" id="pass_error"> <!-- password --> </span>
+
+            <span id="forgot" class="font_family font_style">Forgot Password?</span>
+
+            <div id="log_btn" class="backgroung_color_1 position">
+                <span id="log_text" class="font_color_2 font_family font_style position">Log in</span>
+            </div>
+            <div id="newTo" class="font_family font_style font_weight_1 position">
+                New to Assure?
+                <a href="..\html\registration.html" class="font_color_1">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="..\scripts\login.js"></script>
