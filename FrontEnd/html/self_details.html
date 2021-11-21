@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon">
+    <title>Fill your details - Assure</title>
     <style>
         *{
             margin: 0%;
@@ -181,6 +183,7 @@
     <div id = stepNumber>
         <img src="../icons/explore_details.svg">
     </div>
+    <form>
     <div id="static1">
         <div>Great!</div>
         <div>Let's fill the details first</div>
@@ -189,28 +192,28 @@
     <div class="entry">
         <div>Name</div>
         <div>
-            <input id="name" type="text">
+            <input required id="name" type="text">
         </div>
     </div>
     <div class="entry">
         <div>Gender</div>
         <div>
             <select name="gender" id="gender" onclick="calculatePremium()">
-                    <option value="5">Female</option>
-                    <option value="5.5">Male</option>
-                    <option value="6">Transgender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="transgender">Transgender</option>
             </select>
         </div>
     </div>
 
     <!-- <div class="entry">
         <div>City</div>
-        <div><input type="text" id="city"></div>
+        <div><input required type="text" id="city"></div>
     </div> -->
 
     <div class="entry">
         <div>DOB</div>
-        <div><input type="date" placeholder="dd/mm/yyyy" id="DOB"></div>
+        <div><input required type="date" placeholder="dd/mm/yyyy" id="DOB"></div>
     </div>
 
     <div class="entry">
@@ -235,30 +238,30 @@
 
     <div class="entry">
         <div>Email</div>
-        <div><input type="email" id="email"></div>
+        <div><input required type="email" id="email"></div>
     </div>
 
     <div class="entry">
         <div>Aadhar Number</div>
-        <div><input type="text" id="aadhar" placeholder="1234 1234 1234"> </div>
+        <div><input required type="text" id="aadhar" placeholder="1234 1234 1234"> </div>
     </div>
     <div class="entry">
         <div>Mobile no.</div>
-        <div><input type="tel" id="mobile"></div>
+        <div><input required type="tel" id="mobile"></div>
     </div>
 
     <div class="entry">
         <div>Occupation</div>
-        <div><input type="text" id="occupation"></div>
+        <div><input required type="text" id="occupation"></div>
     </div>
     <div class="entry">
         <div>Weight</div>
-        <div><input type="text" id="weight" placeholder="in Kg."></div>
+        <div><input required type="text" id="weight" placeholder="in Kg."></div>
     </div>
 
     <div class="entry">
         <div>Height</div>
-        <div><input type="text" id="height" placeholder="in ft."></div>
+        <div><input required type="text" id="height" placeholder="in ft."></div>
     </div>
 
     <div id="footer">
@@ -268,10 +271,14 @@
         </div>
         <div onclick="gotoMemberDetails()">Continue</div>
     </div>
-
+</form>
 </body>
 </html>
 <script>
+    let det = JSON.parse(localStorage.getItem('ChosenTA'));
+    document.getElementById('finalPremium').innerText = `Rs. ${det.premium}/-`;
+    document.getElementById('policyName').innerText = "Details";
+
     function gotoMemberDetails(){
             let allDetails = []; 
             let person = {
