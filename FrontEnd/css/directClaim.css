@@ -1,0 +1,201 @@
+*{
+    font-family: Palanquin;
+    margin: 0;
+}
+body{
+    background-color: black;
+    margin: auto;
+    border-radius: 10px;
+}
+#main{
+    /* position: relative; */
+    width: 375px;
+    height: 937px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.claimDiv{
+    margin: auto;
+    margin-top: 4%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 83%;
+    padding: 5%;
+}
+
+.claimDiv a{
+    text-decoration: none;
+}
+
+#claimHead{
+    display: flex;
+}
+
+#iconsInDirectClaim{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    padding: 4px 1px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* position: absolute; */
+    /* right: 80.47%;
+    top: 11.73%;
+    bottom: 73.27%; */
+}
+
+#claimType {
+    /* position: absolute; */
+    /* left: 23.03%;
+    right: 51.31%;
+    top: 12.98%;
+    bottom: 74.94%;  */
+    margin-top: 2%;
+    margin-left: 3%;
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    color: #063035;
+    flex-grow: 2;
+    
+
+}
+#documentsIcon{
+     /* display: flex; */
+   /* flex-direction: row;
+    align-items: flex-start; */
+    
+    padding: 1px 6px;
+    cursor: pointer;
+    /* position: absolute; */
+    /* left: 69.81%;
+    right: 8.16%;
+    top: 13.06%;  
+     bottom: 75.77%;*/
+    
+}
+
+#description{
+    /* position: absolute; */
+    /* left: 13.04%;
+    right: 9.04%;
+    top: 17.98%; */
+    /* bottom: 32.44%; */
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #7B8384;
+}
+
+#claimButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 4px 12px;
+
+    /* position: absolute; */
+    /* left: 9.04%;
+    right: 8.16%;
+    top: 32.06%; */
+    margin-top: 3%;
+    /* bottom: 8.27%; */
+    
+    background: #FFFFFF;
+
+    border: 1px solid #118592;
+    box-sizing: border-box;
+    border-radius: 8px;
+ 
+}
+#claimBtn{
+    padding: 4px 12px;
+    width: 100%;  
+    background: #FFFFFF;
+    font-size: 16px;
+    border: 1px solid #118592;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 3%;
+    cursor: pointer;
+}
+#topBox {
+position: sticky;
+z-index: 1;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+background: #118592;
+border-radius: 20px 20px 0px 0px;
+height: 72px;
+/* margin: auto; */
+/* margin-bottom: 5px; */
+}
+#back {
+position: absolute;
+height: 10px;
+width: 6px;
+margin-left: 25px;
+margin-top: 46px;
+margin-bottom: 16px;
+/* left: 65%;
+right: 5%;
+top: 75%; */
+/* bottom: -25%; */
+/* background: #F2F2F2; */
+/* transform: rotate(-180deg); */
+}
+#prof {
+position: absolute;
+left: 43.47%;
+right: 43.73%;
+top: 48.61%;
+bottom: 11.11%;
+font-weight: bold;
+font-size: 16px;
+line-height: 29px;
+color: #FFFFFF;
+}
+.navIcon {
+    height: 72px;
+    width: 72px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.navIcon:hover {
+    border-top: 4px solid #60d1dd;
+}
+#claimIcon, #claimIcon:hover {
+    border-top: 4px solid #118592;
+}
+#bottomNavbar {
+    position: sticky;
+    top: 85%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.navIcon > p {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+    color: #118592;
+}
+#moreIcon > p {
+    margin-top: 6px;
+}
+button {
+    cursor: pointer;
+}

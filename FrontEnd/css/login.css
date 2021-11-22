@@ -1,0 +1,197 @@
+/* common properties */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder{
+    color: #7B8384;
+}
+
+.font_family{
+    font-family: Palanquin;
+}
+
+.font_style{
+    font-style: normal;
+}
+
+.font_weight_1{
+    font-weight: 500;
+}
+
+.font_color_1{
+    color: #118592;
+}
+
+.font_color_2{
+    color: #FFFFFF;
+}
+
+.backgroung_color_1{
+    background: #118592;
+}
+
+.position{
+    position: absolute;
+}
+
+.visible{
+    visibility: hidden;
+}
+
+
+/* specific properties */
+
+body{
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+}
+
+.main_container{
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+/**/
+
+#top_green_div{
+    width: 375px;
+    height: 322px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#assure_logo_2{
+    position: absolute;
+    width: 182px;
+    height: 182px;
+    left: 96px;
+    top: 70px;
+}
+
+#mid_white_div{
+    position: absolute;
+    width: 343px;
+    height: 452px;
+    left: 16px;
+    top: 282px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+#welcome{
+    width: 140px;
+    height: 29px;
+    left: 28%;
+    top: 12%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #063035;
+}
+
+.input_regis_log{
+    width: 262px;
+    height: 33px;
+    border: none;
+    left: 42px;
+    border-bottom: 1px solid #C4C4C4;
+    outline: none;
+    color: #063035;
+}
+
+.error{
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #F41414;
+}
+
+#email_input{
+    top: 132px;
+}
+
+#email_error{
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    left: 13%;
+    top: 36.5%;
+}
+
+#email_symb{
+    position: absolute;
+    left: 83%;
+    top: 32%;
+}
+
+#pass_input{
+    top: 196px;
+}
+
+#pass_error{
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    left: 13%;
+    top: 50.5%;
+}
+
+#pass_symb{
+    position: absolute;
+    left: 83%;
+    top: 46%;
+}
+
+#forgot{
+    position: absolute;
+    width: 76px;
+    height: 18px;
+    left: 228px;
+    top: 232px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: right;
+    color: #7B8384;
+}
+
+#log_btn{
+    width: 263px;
+    height: 40px;
+    left: 40px;
+    top: 295px;
+    border-radius: 8px;
+}
+
+#log_text{
+    width: 58px;
+    height: 25px;
+    left: 39%;
+    top: 20%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#newTo{
+    width: 167px;
+    height: 22px;
+    left: 90px;
+    top: 350px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+}

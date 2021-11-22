@@ -1,0 +1,331 @@
+
+/* common properties */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder{
+    color: #7B8384;
+}
+
+.font_family{
+    font-family: Palanquin;
+}
+
+.font_style{
+    font-style: normal;
+}
+
+.font_weight_1{
+    font-weight: 500;
+}
+
+.font_color_1{
+    color: #118592;
+}
+
+.font_color_2{
+    color: #FFFFFF;
+}
+
+.backgroung_color_1{
+    background: #118592;
+}
+
+.position{
+    position: absolute;
+}
+
+.visible{
+    visibility: hidden;
+}
+
+
+/* specific properties */
+
+body{
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+}
+
+.main_container{
+    position: relative;
+    width: 385px;
+    height: 842px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+/* header part */
+
+.header{
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background: #118592;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.time_header{
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 30px;
+    top: 11px;
+}
+
+#time{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.i_phone_head{
+    position: absolute;
+    width: 164px;
+    height: 25px;
+    left: 105px;
+    top: 0px;
+    background: #000000;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#icon_battery{
+    position: absolute;
+    width: 21.5px;
+    height: 10px;
+    left: 332px;
+    top: 15px;
+}
+
+#icon_wifi{
+    position: absolute;
+    left: 83.63%;
+    right: 12.7%;
+    top: 15px;
+}
+
+#icon_network{
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    left: 294px;
+    top: 15px;
+}
+
+/* logo and input  */
+
+#assure_logo{
+    width: 182px;
+    height: 182px;
+    left: 96px;
+    top: 70px;
+}
+
+#welcome{
+    width: 140px;
+    height: 29px;
+    left: 117px;
+    top: 252px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #063035;
+}
+
+.input_regis_log{
+    width: 262px;
+    height: 33px;
+    border: none;
+    left: 57px;
+    border-bottom: 1px solid #C4C4C4;
+    outline: none;
+    color: #063035;
+}
+
+#name_input{
+    top: 325px;
+}
+
+#name_error{
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    left: 15%;
+    top: 42.5%;
+}
+
+#name_symb{
+    position: absolute;
+    left: 76%;
+    top: 40%;
+}
+
+#email_input{
+    top: 382px;
+}
+
+#email_error{
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    left: 15%;
+    top: 49.5%;
+}
+
+#email_symb{
+    position: absolute;
+    left: 76%;
+    top: 47%;
+}
+
+#mob_input{
+    top: 439px;
+}
+
+#mobile_error{
+    position: absolute;
+    width: 200px;
+    height: 14px;
+    left: 15%;
+    top: 56%;
+}
+
+#mobile_symb{
+    position: absolute;
+    left: 76%;
+    top: 53.5%;
+}
+
+#pass_input{
+    top: 496px;
+}
+
+#pass_error{
+    position: absolute;
+    width: 250px;
+    height: 14px;
+    left: 15%;
+    top: 63%;
+}
+
+#pass_symb{
+    position: absolute;
+    left: 76%;
+    top: 60.5%;
+}
+
+#confirm_pass_input{
+    top: 553px;
+}
+
+#confirm_error{
+    position: absolute;
+    width: 250px;
+    height: 14px;
+    left: 15%;
+    top: 70%;
+}
+
+#confirm_symb{
+    position: absolute;
+    left: 76%;
+    top: 67%;
+}
+
+.error{
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #F41414;
+}
+
+#submit_btn{
+    width: 263px;
+    height: 40px;
+    left: 56px;
+    top: 682px;
+    border-radius: 8px;
+}
+
+#submit_text{
+    width: 58px;
+    height: 25px;
+    left: 39%;
+    top: 20%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#already{
+    width: 167px;
+    height: 22px;
+    left: 104px;
+    top: 738px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#otp_enter{
+    width: 375px;
+    height: 174px;
+    left: 0px;
+    top: 638px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+#otp{
+    width: 300px;
+    height: 33px;
+    left: 37px;
+    text-align: center;
+}
+
+#otp_error{
+    position: absolute;
+    width: 250px;
+    height: 14px;
+    left: 37%;
+    top: 19.5%;
+}
+
+.enter_btn{
+    width: 160px;
+    height: 40px;
+    left: 106px;
+    top: 35%;
+    border-radius: 8px;
+}
+
+#ent{
+    top: 20%;
+    left: 40%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#cancel{
+    width: 42px;
+    height: 25px;
+    left: 167px;
+    top: 61%;
+    font-weight: 600;
+    font-size: 14px; 
+    line-height: 25px;
+}

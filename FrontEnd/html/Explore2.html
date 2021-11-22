@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Explore2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="container_main">
+        <h2 id="user_name_text">Hello Mukul</h2>
+        <p id="user_greetings_text">It's good to see you back</p>
+    
+    <div id="scrolling">
+        <img class="card" src="../images/pic.svg" alt="slide1">
+        <img id="card-2" class="card" src="../images/Property 1=KHC.svg" alt="">
+        
+    </div>
+</div>
+    <h3 id="heading_product">Select a product</h3>
+    <div id="icon_cont" style="top:400px">
+       <a href="./health_insurance_step1.html"> <img id="icon_health_insurace" src="../icons/Property 1=Health Insurance.svg" alt="icon_health_insurace"></a>
+        <img src="../icons/Property 1=Term insurance.svg" alt="icon_term_insurance" id="term_insurance_icon">
+        <img src="../icons/Component 48.svg" alt="icon_car_insurance" id="car_insurance_icon">
+        <img src="../icons/Property 1=Bike insurance.svg" alt="icon_bike_insurance" id="bike_insurance_icon">
+        <label id="text_health" for="icon_health_insurance">Health insurance</label>
+        <label id="text_term" for="icon_health_insurance">Term insurance</label>
+        <label id="text_car" for="icon_health_insurance">car insurance</label>
+        <label id="text_bike" for="icon_health_insurance">bike insurance</label>
+        <img src="../icons/Property 1=Family insurance.svg" alt="icon_family_insurance" id="family_insurance_icon">
+        <img src="../icons/Property 1=Button 5.svg" alt="" id="covid_insurance_icon">
+        <img src="../icons/Property 1=Button 6.svg" alt="" id="onecr_insurance">
+        <label id="text_family" for="icon_health_insurance">Family insurance</label>
+        <label id="text_covid" for="icon_health_insurance">Covid Secure</label>
+        <label id="text_onecr_cover" for="icon_health_insurance">1 cr Cover</label>
+
+
+        <img id="img_telescope"src="../images/Group 201.svg" alt="">
+
+    </div>
+  
+  
+</body>
+
+</html>
+<script type="module">
+    import {bottomNavbar, loadNavbar} from "../components/bottomNavbar.js";
+    let div = document.createElement('div');
+    div.innerHTML = bottomNavbar();
+    div.style.marginTop = "120%";
+    document.body.appendChild(div);
+
+    loadNavbar();
+</script>

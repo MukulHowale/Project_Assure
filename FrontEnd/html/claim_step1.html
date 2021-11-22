@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon"> 
+    <title>Make a Claim - Assure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="../css/hospital.css">
+
+<body>
+    <div class="top_nav"><a href="./directClaim.html"><img class="position-top_nav_arrow" src="../images/Vector.svg"
+                alt="left_arrow_button"></a>
+        <p id="claim_heading" class="text-center size-16 text-white position-top_nav_text d-inline">Hospital Claim</p>
+    </div>
+    <div id="steps_container">
+
+     <img src="../images/1,2,3 Steps.svg" alt="navigation_bar">
+        
+    
+    </div>
+
+
+    <form action="" class="padding-1">
+
+      
+     
+
+        <label for="select_policy" class="mt-3 mb-3">Policy</label>
+        <select id="select_policy" class="form-select">
+          <option value="" disabled selected>Select Policy</option>
+        </select>
+
+        <label for="select_location" class="mt-3 mb-3">Location</label>
+        <select id="select_location" class="form-select">
+          <option value="" disabled selected>Select Location</option>
+        </select>
+
+        <label for="select_hospital" class=" mt-3 mb-3">Hospital</label>
+        <select id="select_hospital" class="form-select">
+          <option value="" disabled selected>Select Hospital</option>
+        </select>
+
+      <a href="tel:9888544411" id="call_icon" class="d-none float-end mt-5"><img src="../icons/call.svg" alt=""></a>
+
+        <div class="form_button_div">
+
+        
+          <a href="./directClaim.html" class="buttonOutline" role="button">Back</a>
+
+            <a href="./claim_step2.html" class="buttonfill" id="next" role="button">Next</a>
+
+        </div>
+        </form>
+        <script src="../scripts/claimStep1.js"></script>
+</body>
+</html>

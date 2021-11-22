@@ -1,0 +1,392 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Review & Pay</title>
+</head>
+<style>
+    *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Palanquin;
+            background-color: #E5E5E5;
+        }
+        #header{
+            height: 72px;
+            background-color: #118592;
+        }
+        #policyName{
+            color: #FFFFFF;
+            background-color: #118592;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 29px;
+            position: absolute;
+            left: 152px;
+            top: 35px
+        }
+        #backButton{
+            height: 10px;
+            color: #F2F2F2;
+            background-color: #118592;
+            width: 6px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 29px;
+            position: absolute;
+            left: 13px;
+            top: 35px
+        }
+        #stepNumber img{
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        #static1{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left: 16px;
+            margin-top: 16px;
+            color:#063035;
+        }
+        #static2{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #7B8384;
+            margin-left: 16px;
+        }
+        #block{
+            width: 343px;
+            height: 229px;
+            background-color: #FFFFFF;
+            margin-left: 16px;
+            margin-top: 24px;
+        }
+        #block div{
+            background-color: white;
+        }
+        #block>div:nth-child(1){
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0em;
+            color: #118592;
+            padding-top: 27px;
+            padding-left: 40px
+        }
+        #block>div:nth-child(2){
+            margin-left: 40px;
+            margin-top: 5px;
+            padding-top: 0px;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            color:#7B8384;
+        }
+        #block>div:nth-child(3){
+            font-size: 14px;
+            margin-left: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+        #block>div:nth-child(4){
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+        }
+        #flex_f>div>div:nth-child(1){
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            color:#7B8384;
+        }
+        #flex_f>div>div:nth-child(2){
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        #flex_f>div:nth-child(2){
+            margin-left: 120px;
+        }
+        hr{
+            border: 1px solid #C4C4C4;
+            margin-top: 20px;
+        }
+        #flex_s{
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:#118592;
+        }
+        #flex_s>div:nth-child(2){
+            margin-left: 198px;
+        }
+        #block2{
+            width: 343px;
+            background-color: #FFFFFF;
+            margin-left: 16px;
+            margin-top: 24px;
+            padding-bottom: 30px;
+        }
+        #block2>div{
+            background-color: white;
+        }
+        #block2>div>div{
+            background-color: white;
+        }
+        #smaller{
+            margin-left: 40px;
+            margin-top: 5px;
+            padding-top: 0px;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            color:#7B8384;
+        }
+        #bigger{
+            font-size: 14px;
+            margin-left: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        #block2>div:nth-child(1){
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0em;
+            color: #118592;
+            padding-top: 27px;
+            padding-left: 40px
+        }
+
+        #ticking{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            width: 343px;
+            height: 75px;
+            margin-left: 16px;
+            background-color: white;
+        }
+        #ticking>label{
+            background-color: white;
+            color: #7B7E84;
+        }
+
+        #footer{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            padding-bottom: 12px;
+            position: fixed;
+            bottom: 0px;
+        }
+        #footer div{
+            background-color: white;
+        }
+
+        #footer>div:nth-child(1){
+            width: 199px;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0px;
+        }
+        #footer>div:nth-child(1)>div:nth-child(1){
+            margin-left: 56px;
+            margin-top: 17px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            color:#7B8384;
+        }
+        #footer>div:nth-child(1)>div:nth-child(2){
+            margin-left: 56px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            color:#063035;
+        }
+
+
+        #footer>div:nth-child(2){
+            width: 160px;
+            height: 36px;
+            background-color: #118592;
+            border-radius: 8px;
+            margin-top: 12px;
+            margin-right: 16px;
+            text-align: center;
+            padding-top: 12px;
+            color: white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+        }
+        
+       
+        
+</style>
+<body>
+    <div id="header">
+        <div>
+           <div id="backButton"><</div>
+        </div>
+        <div id="policyName">Review</div>
+    </div>
+    <div id = stepNumber>
+        <img src="../icons/Component_review_pay.svg">
+    </div>
+    <div id="static1">
+        <div>Almost there!</div>
+        <div>You have completed all details.</div>
+    </div>
+    <div id="static2">Review your information provided.</div>
+
+    <div id="block">
+        <div id="userName">Plan for Mukul</div>
+        <div>Product</div>
+        <div>Health Insurance</div>
+        <div id="flex_f">
+            <div>
+                <div>Cover</div>
+                <div id="coverit">Rs. 5 Lakh</div>
+            </div>
+            <div>
+                <div>Premium</div>
+                <div id="covprem">₹ 8700</div>
+            </div>
+        </div>
+        <hr>
+        <div id="flex_s">
+            <div>Max Bupa</div>
+            <div>></div>
+        </div>
+    </div>
+
+    <div id="block2">
+        <div>Personal Details</div>
+        <div id="smaller">Full Name</div>
+        <div id="bigger">
+            <!-- Mukul -->
+            <span id="nameUser">
+
+            </span>
+        </div>
+        <div id="smaller">email</div>
+        <div id="bigger">
+            <!-- m@gmail.com -->
+            <span id="emailUser">
+
+            </span>
+        </div>
+        <div id="smaller">Mobile Number</div>
+        <div id="bigger">
+            <!-- 9876543210 -->
+            <span id="mobUser">
+
+            </span>
+        </div>
+        <div id="smaller">Occupation</div>
+        <div id="bigger">
+            <!-- Backend Engineer -->
+            <span id="occUser">
+
+            </span>
+        </div>
+        <div id="smaller">DOB</div>
+        <div id="bigger">
+            <!-- 16/06/1997 -->
+            <span id="dobUser">
+
+            </span>
+        </div>
+        <hr>
+        <div id="flex_s">
+            <div>Edit</div>
+            <div>></div>
+        </div>
+    </div>
+    <div>
+        <form id="ticking">
+            <input type="checkbox" id="tick" name="tick" value="true">
+            <label for="vehicle1"> I hereby clarify that the documents submitted are valid and legitimate. Incase, any
+                issue I will be responsible for it.
+            </label><br>
+        </form>
+        <br><br><br>
+    </div>
+
+    <div id="footer">
+        <div>
+            <div>Total Premium</div>
+            <div id="finalPremium">Rs. /-</div>
+        </div>
+        <div onclick="nextPage()">Continue</div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+    let det = JSON.parse(localStorage.getItem('ChosenTA'));
+    let allDetails = JSON.parse(localStorage.getItem('allDetails'))[0];
+    document.getElementById('finalPremium').innerText = `Rs. ${det.premium}/-`;
+    // document.getElementById('policyName').innerText = det.policyName;
+    document.getElementById('userName').innerText = "Plan for " + allDetails.name;
+    document.getElementById('nameUser').innerText = allDetails.name;
+    document.getElementById('emailUser').innerText = allDetails.email;
+    document.getElementById('mobUser').innerText = allDetails.mobile;
+    document.getElementById('occUser').innerText = allDetails.occupation;
+    document.getElementById('dobUser').innerText = allDetails.dob;
+    document.getElementById('covprem').innerText = det.premium;
+    document.getElementById('coverit').innerText = det.cover;
+
+    
+    function nextPage(){
+        window.location.href = "./payment.html"
+    }
+</script>

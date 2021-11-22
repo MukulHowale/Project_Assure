@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icons/site_logo.svg" type="image/x-icon">
+    <title>Fill your details - Assure</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Palanquin;
+        }
+        #header{
+            height: 72px;
+            background-color: #118592;
+        }
+        #policyName{
+            color: #FFFFFF;
+            background-color: #118592;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 29px;
+            position: absolute;
+            left: 152px;
+            top: 35px
+        }
+        #backButton{
+            height: 10px;
+            color: #F2F2F2;
+            background-color: #118592;
+            width: 6px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 29px;
+            position: absolute;
+            left: 13px;
+            top: 35px
+        }
+        #stepNumber img{
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        #static1{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 16px;
+        margin-top: 16px;
+        color:#063035;
+        }
+        #static2{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #7B8384;
+            margin-left: 16px;
+        }
+        .entry{
+            margin-left: 16px;
+        }
+        .entry>div:nth-child(1){
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 16px;
+            margin-top: 20px;
+        }
+
+        .entry>div:nth-child(2)>input{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 16px;
+            border: 1px solid #C4C4C4;
+            border-radius: 8px;
+            height: 40px;
+            width: 343px;
+            padding-left: 31px;
+            color: #063035;
+        }
+
+        .entry>div:nth-child(2)>select{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            margin-top: 0px;
+            margin-bottom: 16px;
+            
+            border: 1px solid #C4C4C4;
+            border-radius: 8px;
+            
+            height: 40px;
+            width: 343px;
+            background-color: white;
+            padding-left: 31px;
+            color: #063035;
+        }
+
+        #footer{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            padding-bottom: 12px;
+        }
+        #footer div{
+            background-color: white;
+        }
+
+        #footer>div:nth-child(1){
+            width: 199px;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0px;
+        }
+        #footer>div:nth-child(1)>div:nth-child(1){
+            margin-left: 56px;
+            margin-top: 17px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            color:#7B8384;
+        }
+        #footer>div:nth-child(1)>div:nth-child(2){
+            margin-left: 56px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            color:#063035;
+        }
+
+
+        #footer>div:nth-child(2){
+            width: 160px;
+            height: 36px;
+            background-color: #118592;
+            border-radius: 8px;
+            margin-top: 12px;
+            margin-right: 16px;
+            text-align: center;
+            padding-top: 12px;
+            color: white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0em;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+           <div id="backButton" onclick="history.back()"><</div>
+        </div>
+        <div id="policyName">Max Bupa</div>
+    </div>
+    <div id = stepNumber>
+        <img src="../icons/explore_details.svg">
+    </div>
+    <form>
+    <div id="static1">
+        <div>Great!</div>
+        <div>Let's fill the details first</div>
+    </div>
+    <div id="static2">Tell us about yourself </div>
+    <div class="entry">
+        <div>Name</div>
+        <div>
+            <input required id="name" type="text">
+        </div>
+    </div>
+    <div class="entry">
+        <div>Gender</div>
+        <div>
+            <select name="gender" id="gender" onclick="calculatePremium()">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="transgender">Transgender</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- <div class="entry">
+        <div>City</div>
+        <div><input required type="text" id="city"></div>
+    </div> -->
+
+    <div class="entry">
+        <div>DOB</div>
+        <div><input required type="date" placeholder="dd/mm/yyyy" id="DOB"></div>
+    </div>
+
+    <div class="entry">
+        <div>Marital Status</div>
+        <div>
+            <select name="marital" id="married">
+                    <option value="true">Married</option>
+                    <option value="false">Unmarried</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- <div class="entry">
+        <div>Taking medications?</div>
+        <div>
+            <select name="medicine" id="medicine">
+                    <option value="true">Yes</option>
+                    <option value="false">False</option>
+            </select>
+        </div>
+    </div> -->
+
+    <div class="entry">
+        <div>Email</div>
+        <div><input required type="email" id="email"></div>
+    </div>
+
+    <div class="entry">
+        <div>Aadhar Number</div>
+        <div><input required type="text" id="aadhar" placeholder="1234 1234 1234"> </div>
+    </div>
+    <div class="entry">
+        <div>Mobile no.</div>
+        <div><input required type="tel" id="mobile"></div>
+    </div>
+
+    <div class="entry">
+        <div>Occupation</div>
+        <div><input required type="text" id="occupation"></div>
+    </div>
+    <div class="entry">
+        <div>Weight</div>
+        <div><input required type="text" id="weight" placeholder="in Kg."></div>
+    </div>
+
+    <div class="entry">
+        <div>Height</div>
+        <div><input required type="text" id="height" placeholder="in ft."></div>
+    </div>
+
+    <div id="footer">
+        <div>
+            <div>Total Premium</div>
+            <div id="finalPremium">Rs. 8,700/-</div>
+        </div>
+        <div onclick="gotoMemberDetails()">Continue</div>
+    </div>
+</form>
+</body>
+</html>
+<script>
+    let det = JSON.parse(localStorage.getItem('ChosenTA'));
+    document.getElementById('finalPremium').innerText = `Rs. ${det.premium}/-`;
+    document.getElementById('policyName').innerText = "Details";
+
+    function gotoMemberDetails(){
+            let allDetails = []; 
+            let person = {
+                "name" : document.getElementById("name").value,
+                "relation_with_user" : "self",
+                "dob" : document.getElementById("DOB").value,
+                "gender" : document.getElementById("gender").value,
+                "is_taking_medicines" : JSON.parse(localStorage.getItem("medicine")),
+                "city" : JSON.parse(localStorage.getItem("city")),
+                "martial_status" : document.getElementById("married").value,
+                "email" : document.getElementById("email").value,
+                "aadhaar" : document.getElementById("aadhar").value,
+                "mobile" : document.getElementById("mobile").value,
+                "occupation" : document.getElementById("occupation").value,
+                "height" : document.getElementById("height").value,
+                "weight" : document.getElementById("weight").value
+            }
+            allDetails.push(person);
+            window.localStorage.setItem("allDetails", JSON.stringify(allDetails));
+            localStorage.setItem("memberCount", JSON.stringify(2));
+            let memberCount = JSON.parse(window.localStorage.getItem("memberCount"));
+            console.log(memberCount);
+            if(memberCount!==0){
+                window.location.href = "./member_details.html";
+            }
+            else{
+                window.location.href = "./review.html";
+            }
+        }
+</script>
