@@ -1,1 +1,1 @@
-web: java "E:\Project_Assure\Backend\src\main\java\com\constructweekproject\Assure\AssureApplication.java"
+web: java "Backend\src\main\java\com\constructweekproject\Assure\AssureApplication.java"
